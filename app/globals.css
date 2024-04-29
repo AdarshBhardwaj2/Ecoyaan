@@ -1,33 +1,50 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+.hero1 {
+  height: 600px;
+  width: 100%;
+  background-image: url(https://i.pinimg.com/originals/1a/b0/89/1ab089aaf438547bc56b14d3e597807d.jpg);
+  background-size: cover;
+}
+.hero2 {
+  height: 676px;
+  width: 100%;
+  display: flex;
+}
+.box1 {
+  width: 50%;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+p {
+  font-size: 20px;
+}
+.hero-img2 {
+  height: 100%;
+  margin: 50px;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  width: 50%;
+  background-image: url(https://cdn-icons-png.flaticon.com/512/7465/7465461.png);
+  transition: transform 0.2s;
+}
+.hero-img2:hover {
+  ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+  z-index: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@media (max-width: 952px) {
+  h1 {
+    font-size: 20px;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .hero1 {
+    text-align: start;
   }
 }
