@@ -27,8 +27,9 @@ const page = () => {
               impact on the environment.
             </p>
           </div>
-
-          <div className="hero-img2"></div>
+          <div className="box2">
+            <div className="hero-img2"></div>
+          </div>
         </div>
       </div>
     </div>

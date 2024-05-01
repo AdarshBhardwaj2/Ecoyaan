@@ -3,13 +3,13 @@
   padding: 0px;
   box-sizing: border-box;
 }
-.head {
+/* .head {
   height: 64px;
   width: 100%;
-}
+} */
 .box11 {
   margin-top: 65px;
-  height: 500px;
+  height: 35vw;
   width: 100%;
   margin: 5px 0px;
   background-color: azure;
@@ -17,11 +17,13 @@
   flex-direction: row;
 }
 .box12 {
-  height: 500px;
+  height: 35vw;
   width: 100%;
   margin: 5px 0px;
   background-color: blanchedalmond 80%;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 .box111 {
   height: 400px;
@@ -36,6 +38,9 @@
   height: 400px;
   width: 50%;
   padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .box112-img {
   height: 300px;
@@ -47,9 +52,98 @@
 p {
   font-size: 17px;
 }
+.title {
+  height: 4vw;
+  text-align: center;
+  /* background-color: blue; */
+}
+.contentBox {
+  height: 31vw;
+  /* background-color: blueviolet; */
+  display: inline-block;
+  padding: 1vw;
+}
 
-.box12Content {
-  height: 40%;
+.cont1,
+.cont2,
+.cont3,
+.cont4 {
+  display: inline-block; /* Assign display: inline-block; to make them behave like inline-block elements */
+  height: 50%;
+  width: 50%;
+  padding: 3vw;
+}
+/* .cont1 {
+  background-color: brown;
+}
+.cont2 {
+  background-color: red;
+}
+.cont3 {
+  background-color: pink;
+}
+.cont4 {
+  background-color: green;
+} */
+
+@media (max-width: 600px) {
+  .box11 {
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+  }
+  .box111 {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  h1 {
+    font-size: 6vw;
+  }
+  .box112 {
+    height: 30%;
+    width: 100%;
+  }
+  .box112-img {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    object-fit: cover;
+  }
+  .box12 {
+    height: 140vh;
+    width: 100%;
+  }
+  .contentBox {
+    display: flex;
+    flex-direction: column;
+    gap: 6vw;
+    padding: 4vw;
+  }
+  .title {
+    height: 12vh;
+    width: 100%;
+  }
+  .cont1,
+  .cont2,
+  .cont3,
+  .cont4 {
+    width: 100%;
+    height: 50vh;
+  }
+  /* .box12Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  } */
+}
+
+/* .box12Content {
+  height: 10vw;
   width: 50%;
   display: inline-block;
 }
@@ -83,4 +177,4 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
+} */

@@ -6,7 +6,7 @@ import "@/app/About/about.css";
 const about = () => {
   return (
     <div>
-      <div className="head"></div>
+      {/* <div className="navv"></div> */}
       <div className="box11">
         <div className="box111">
           <h1>About Ecoyaan</h1>
@@ -25,20 +25,61 @@ const about = () => {
             platform and our social media pages, you can find:
           </p>
           <br />
-          <p>
-            ➼ Tips and tricks to adopt a more eco-friendly and low-waste
-            lifestyle ➼Videos, posts, and quizzes on climate change and
-            sustainability ➼Events and pledges that invite you to adopt a more
-            sustainable lifestyle
-          </p>
+
+          <ul>
+            <li>
+              {" "}
+              ➼ Tips and tricks to adopt a more eco-friendly and low-waste
+              lifestyle
+            </li>
+            <li>
+              ➼Videos, posts, and quizzes on climate change and sustainability
+            </li>
+            <li>
+              ➼Events and pledges that invite you to adopt a more sustainable
+              lifestyle
+            </li>
+          </ul>
         </div>
         <div className="box112">
           <div className="box112-img"></div>
         </div>
       </div>
       <div className="box12">
-        <div className="box12Content">
+        <div className="title">
           <h1>Our Values</h1>
+        </div>
+        <div className="contentBox">
+          <div className="cont1">
+            <h3> Trust</h3>
+            <br /> We value the trust of our community. We strive to be
+            transparent and honest in everything we do, from the content we
+            share today to sourcing our products in the future.
+          </div>
+          <div className="cont2">
+            <h3>Authenticity</h3>
+            <br /> We are genuine in our mission to promote sustainability and
+            environmental awareness. An authentic community of eco-conscious
+            people can inspire each other on the journey towards sustainability.
+          </div>
+          <div className="cont3">
+            <h3>Impact</h3>
+            <br /> We measure our success by our impact on the planet and our
+            community. We aim to empower our sellers and customers to make
+            responsible choices that benefit their well-being and the well-being
+            of others.
+          </div>
+          <div className="cont4">
+            <h3>Fun & Engaging</h3>
+            <br /> Moving towards a sustainable lifestyle and the constant news
+            around climate change can be stressful. We aim to inject fun and
+            creativity into everything we do, from designing our products to
+            providing services.
+          </div>
+        </div>
+
+        {/* <h1>Our Values</h1>
+        <div className="box12Content">
           <div className="box12-content">
             <div className="contentImg"></div>
             <div className="contentDesc">
@@ -48,8 +89,7 @@ const about = () => {
               share today to sourcing our products in the future.
             </div>
           </div>
-        </div>
-        <div className="box12Content">
+
           <div className="box12-content">
             <div className="contentImg"></div>
             <div className="contentDesc">
@@ -60,8 +100,7 @@ const about = () => {
               sustainability.
             </div>
           </div>
-        </div>
-        <div className="box12Content">
+
           <div className="box12-content">
             <div className="contentImg"></div>
             <div className="contentDesc">
@@ -72,8 +111,7 @@ const about = () => {
               well-being of others.
             </div>
           </div>
-        </div>
-        <div className="box12Content">
+
           <div className="box12-content">
             <div className="contentImg"></div>
             <div className="contentDesc">
@@ -84,7 +122,7 @@ const about = () => {
               to providing services.
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
